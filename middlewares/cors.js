@@ -9,7 +9,7 @@ function cors(req, res, next) {
     if (allowedCors.includes(origin)) { 
         res.header('Access-Control-Allow-Origin', origin);
     }
-    next(); // передаем за проезд!!!
+    next();
 } 
 
 module.exports = { cors }
